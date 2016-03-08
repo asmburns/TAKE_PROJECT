@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
 
-  get 'get_buildings' => 'buildings#get_all'
+  get 'get_buildings' => 'buildings#get_buildings'
+  get 'build' => 'buildings#build'
+  get 'get_stats' => 'get_stats#get_stats'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
